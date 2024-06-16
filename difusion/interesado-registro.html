@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Datos y Horarios de Cursos</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Cursos y Horarios</h1>
+        <div class="accordion" id="cursosAccordion">
+            <div class="card">
+                <div class="card-header" id="headingCurso1">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseCurso1" aria-expanded="true" aria-controls="collapseCurso1">
+                            Curso 1
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseCurso1" class="collapse show" aria-labelledby="headingCurso1" data-parent="#cursosAccordion">
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Lunes: 09:00 - 11:00</li>
+                            <li class="list-group-item">Martes: 14:00 - 16:00</li>
+                            <li class="list-group-item">Miércoles: 08:00 - 10:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingCurso2">
+                    <h2 class="mb-0">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseCurso2" aria-expanded="false" aria-controls="collapseCurso2">
+                            Curso 2
+                        </button>
+                    </h2>
+                </div>
+                <div id="collapseCurso2" class="collapse" aria-labelledby="headingCurso2" data-parent="#cursosAccordion">
+                    <div class="card-body">
+                        <ul class="list-group">
+                            <li class="list-group-item">Jueves: 10:00 - 12:00</li>
+                            <li class="list-group-item">Viernes: 11:00 - 13:00</li>
+                            <li class="list-group-item">Sábado: 09:00 - 11:00</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2 class="text-center mt-5">Registro de Datos</h2>
+        <form id="registroForm">
+            <div class="form-group">
+                <label for="nombre_completo">Nombre Completo</label>
+                <input type="text" class="form-control" id="nombre_completo" name="nombre_completo" maxlength="200" required>
+            </div>
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" class="form-control" id="nombres" name="nombres" maxlength="200">
+            </div>
+            <div class="form-group">
+                <label for="primer_apellido">Primer Apellido</label>
+                <input type="text" class="form-control" id="primer_apellido" name="primer_apellido" maxlength="200">
+            </div>
+            <div class="form-group">
+                <label for="segundo_apellido">Segundo Apellido</label>
+                <input type="text" class="form-control" id="segundo_apellido" name="segundo_apellido" maxlength="200">
+            </div>
+            <div class="form-group">
+                <label for="mayor_edad">Mayor de Edad</label>
+                <select class="form-control" id="mayor_edad" name="mayor_edad">
+                    <option value="true">Sí</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="numero_contacto">Número de Contacto</label>
+                <input type="text" class="form-control" id="numero_contacto" name="numero_contacto" maxlength="20">
+            </div>
+            <div class="form-group">
+                <label for="folio">Folio</label>
+                <input type="text" class="form-control" id="folio" name="folio" maxlength="200">
+            </div>
+            <div class="form-group">
+                <label for="contactado">Contactado</label>
+                <select class="form-control" id="contactado" name="contactado">
+                    <option value="true">Sí</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="respuesta_recibida">Respuesta Recibida</label>
+                <select class="form-control" id="respuesta_recibida" name="respuesta_recibida">
+                    <option value="true">Sí</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="respuesta_positiva">Respuesta Positiva</label>
+                <select class="form-control" id="respuesta_positiva" name="respuesta_positiva">
+                    <option value="true">Sí</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="convertido_en_alumno">Convertido en Alumno</label>
+                <select class="form-control" id="convertido_en_alumno" name="convertido_en_alumno">
+                    <option value="true">Sí</option>
+                    <option value="false">No</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
